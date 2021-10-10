@@ -1,3 +1,23 @@
+#define _CRT_SECURE_NO_WARNINGS
+//#include<stdio.h>
+//int main()
+//{
+//	int arr[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+//	int k = 0;
+//	scanf("%d", &k);
+//	int i = 0;
+//	for (; i<10; i++)
+//	{
+//		if (arr[i] == k)
+//			break;
+//	}
+//	if (i<10)
+//		printf("找到了：下标是%d\n", i);
+//	else
+//		printf("找不到");
+//	return 0;
+//}
+#include<stdio.h>
 int main()
 {
 	int arr[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
