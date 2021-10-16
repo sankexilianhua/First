@@ -1,73 +1,39 @@
 #define  _CRT_SECURE_NO_WARNINGS
 //#include<stdio.h>
-//void change(int i, int j)
+//void sort(int arr[], int n)
 //{
-//	int tmp = 0;
-//	tmp = i;
-//	i = j;
-//	j = tmp;
-//}
-//int main()
-//{
-//	int i = 10;
-//	int j = 5;
-//	change(i, j);
-//	printf("%d %d", i, j);
-//	return 0;
-//}
-//#include<stdio.h>
-//void change(int* i, int* j)
-//{
-//	int tmp = 0;
-//	tmp = *i;
-//	*i = *j;
-//	*j = tmp;
-//}
-//int main()
-//{
-//	int i = 10;
-//	int j = 5;
-//	change(&i, &j);
-//	printf("%d %d", i, j);
-//	return 0;
-//}
-
-//#include<stdio.h>
-//void print2()
-//{
-//	printf("hello");
-//}
-//void print1()
-//{
-//	print2();
-//}
-//int main()
-//{
-//	print1();
-//	return 0;
-//}
-//#include<stdio.h>
-//int main()
-//{
-//	printf("%d", printf("hello\n"));
+//	int i = 0;
+//	for (; i<n ; i++)
+//	{
+//		int j = i;
+//		int max = i;
+//		for (; j<n ; j++)
+//		{
+//			if (arr[max]<arr[j ])
+//			{
+//				max = j ;
+//			}
+//		}
+//		int tmp = arr[i];
+//		arr[i] = arr[max];
+//		arr[max] = tmp;
+//	}
 //
+//}
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d", &n);
+//	int arr[41] = { 0 };
+//	int i = 0;
+//	for (i = 0; i<n; i++)
+//	{
+//		scanf("%d", &arr[i]);
+//	}
+//	sort(arr, n);
+//	for (i = 0; i<5; i++)
+//	{
+//		printf("%d ", arr[i]);
+//	}
 //	return 0;
 //}
-
-#include<stdio.h>
-
-int main()
-{
-	void print1();
-	void print2();
-	print1();
-	return 0;
-}
-void print2()
-{
-	printf("hello");
-}
-void print1()
-{
-	print2();
-}
