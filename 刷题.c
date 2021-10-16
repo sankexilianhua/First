@@ -1,39 +1,50 @@
-//#define  _CRT_SECURE_NO_WARNINGS
-#include<stdio.h>
-//void sort(int arr[], int n)
-//{
-//	int i = 0;
-//	for (; i<n - 1; i++)
-//	{
-//		int j = i;
-//		for (; j<n - 1; j++)
-//		{
-//			if (arr[j]<arr[j + 1])
-//			{
-//				j = j + 1;
-//			}
-//		}
-//		int tmp = arr[j];
-//		arr[j] = arr[i];
-//		arr[i] = tmp;
-//	}
-//
-//}
+#define  _CRT_SECURE_NO_WARNINGS
+//#include<stdio.h>
 //int main()
 //{
-//	int n = 0;
-//	scanf("%d", &n);
-//	int arr[40] = { 0 };
-//	int i = 0;
-//	//for (i = 0; i<n; i++)
-//	//{
-//		//scanf("%d", arr[i]);
-//	//}
-//	scanf("%d %d %d %d %d", arr[0], arr[1], arr[2], arr[3], arr[4]);
-//	sort(arr, n);
-//	for (i = 0; i<5; i++)
+//	char arr[40] = { 0 };
+//	scanf("%s", &arr);
+//	int i = 0, count1 = 0, count2 = 0;
+//	for (; arr[i] != 0; i++)
 //	{
-//		printf("%d ", arr[i]);
+//		if (arr[i] == 'A')
+//			count1++;
+//		else if (arr[i] == 'B')
+//			count2++;
+//	}
+//	if (count1>count2)
+//		printf("A");
+//	else if (count1<count2)
+//		printf("B");
+//	else
+//		printf("E");
+//	return 0;
+//}
+
+//#include<stdio.h>
+//int main()
+//{
+//	int i = 0;
+//	while (scanf("%d", &i) != EOF)
+//	{
+//		if (i % 2 == 0)
+//			printf("Even\n");
+//		else
+//			printf("Odd\n");
 //	}
 //	return 0;
 //}
+
+#include<stdio.h>
+int main()
+{
+	int n;
+	while (scanf("%d", &n) != EOF)
+	{
+		if (n >= 60)
+			printf("Pass\n");
+		else
+			printf("Fail\n");
+	}
+	return 0;
+}
