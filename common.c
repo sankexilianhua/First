@@ -1,47 +1,71 @@
 #define  _CRT_SECURE_NO_WARNINGS
+#define PI 3.1415926
 #include<stdio.h>
-#include<stdlib.h>
-#include<windows.h>
-int Add()
-{
-	float a, x, y;
-	for (y = 1.5f; y>-1.5f; y -= 0.1f)
-	{
-		for (x = -1.5f; x<1.5f; x += 0.05f)
-		{
-			a = x*x + y*y - 1;
-			//这里的@符号即为打印出的心形图案符号，可更改
-			char ch = a*a*a - x*x*y*y*y <= 0.0f ? '@' : ' ';
-			putchar(ch);
-			//或者putchar(a*a*a-x*x*y*y*y<=0.0f?'*':' ');
-		}
-		printf("\n");
-	}
-}
 int main()
 {
-	int(*pa)() = Add;
-	printf("%d\n",(*pa)());
-	for (int i = 0; i < 10000; i++)
+	int a, b, c, d, e, f, g;
+	scanf("%d%d%d%d%d%d%d", &a, &b, &c, &d, &e, &f, &g);
+	int tmp;
+	if (a<b)
 	{
-		system("color 1");
-		Sleep(500);
-		system("color 2");
-		Sleep(500);
-		system("color 3");
-		Sleep(500);
-		system("color 4");
-		Sleep(500);
-		system("color 5");
-		Sleep(500);
-		system("color 6");
-		Sleep(500);
-		system("color 7");
-		Sleep(500);
-		system("color 8");
-		Sleep(500);
-
+		tmp = a;
+		a = b;
+		b = tmp;
 	}
-	system("pause");
+	if (a<c)
+	{
+		tmp = a;
+		a = c;
+		c = tmp;
+	} if (a<d)
+	{
+		tmp = a;
+		a = d;
+		d = tmp;
+	} if (a<e)
+	{
+		tmp = a;
+		a = e;
+		e = tmp;
+	} if (a<f)
+	{
+		tmp = a;
+		a = f;
+		f = tmp;
+	}
+	if (g>a)
+	{
+		tmp = a;
+		a = g;
+		g = tmp;
+	}
+	if (g>b)
+	{
+		tmp = b;
+		b = g;
+		g = tmp;
+	}    if (g>c)
+	{
+		tmp = c;
+		c = g;
+		g = tmp;
+	}    if (g>d)
+	{
+		tmp = d;
+		d = g;
+		g = tmp;
+	}    if (g>e)
+	{
+		tmp = e;
+		e = g;
+		g = tmp;
+	}    if (g>f)
+	{
+		tmp = f;
+		f = g;
+		g = tmp;
+	}
+	double sum = (b + c + d + e + f) / 5.0;
+	printf("%.2lf", sum);
 	return 0;
 }
