@@ -1,16 +1,19 @@
 #define  _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
+#include<stdlib.h>
+int cmp_int(const void *e1,const void *e2)
+{
+	return *(int*)e2 - *(int*)e1;
+}
 int main()
 {
-	int n;
-	while (~scanf("%d", &n))
+	int arr[] = { 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 };
+	int sz = sizeof(arr) / sizeof(arr[0]);
+	qsort(arr,sz,sizeof(arr[0]),cmp_int);
+	for (int i = 0; i < sz; i++)
 	{
-		long long int sum = 0, i;
-		for (i = 1; i <= n; i++)
-		{
-			sum += i;
-		}
-		printf("%d\n\n",sum);
+		printf("%d ",arr[i]);
 	}
+	system("pause");
 	return 0;
 }
